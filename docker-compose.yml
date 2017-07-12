@@ -1,0 +1,17 @@
+#
+# Minecraft Server on Docker
+#
+version: '2'
+services:
+
+  #  1.12
+  minecraft:
+    build: ./images/minecraft
+    container_name: minecraft
+    environment:
+      JAVA_OPTS: "-Xms1024M -Xmx4096M"
+    volumes:
+      - ./data/minecraft/1.12/:/mcroot/app/
+      - ./conf/minecraft/1.12/:/mcroot/conf/
+    ports:
+      - '25565:25565'
