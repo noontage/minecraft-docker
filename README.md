@@ -1,2 +1,2 @@
-# minecraft-docker
-mincraft vanilla server on Docker
+# Mincraft Server [Vanilla] on Docker
+
